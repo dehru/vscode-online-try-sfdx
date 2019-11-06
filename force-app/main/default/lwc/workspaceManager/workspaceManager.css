@@ -1,0 +1,15 @@
+/* THESE ARE NOT WORKING...THE DEFAULT PLACEHOLDERS IN LWC SLDS LOOK LIKE ACTUAL VALUES :-( */
+.workspace-name input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: lightslategray;
+}
+
+.workspace-name input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: lightslategray;
+}
+
+.workspace-name input::-ms-input-placeholder {
+  /* Edge */
+  color: lightslategray;
+}

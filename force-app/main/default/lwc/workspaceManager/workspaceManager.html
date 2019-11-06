@@ -1,0 +1,17 @@
+<template>
+  <template if:true={workspaces}>
+    <template for:each={workspaces} for:item="workspace">
+      <c-workspace key={workspace.id} name={workspace.Name} status={workspace.Status__c}
+        resource-id={workspace.Remote_Resource_ID__c} workspace-id={workspace.Id} onrefresh={handleRefresh}>
+      </c-workspace>
+    </template>
+  </template>
+  <lightning-card title="Create Workspace" icon-name="standard:insert_tag_field" class="slds-m-top_medium">
+    <div class="slds-m-around_medium">
+      <lightning-input label="Name" onchange={handleNameChange} class="slds-m-bottom_x-small workspace-name" required
+        max="100" placeholder="My Project..." aria-placeholder="My Project"
+        field-level-help="The workspace name must be provided and less than 100 characters in length"></lightning-input>
+      <lightning-button label="Create Workspace" variant="brand" onclick={handleCreateWorkspace}></lightning-button>
+    </div>
+  </lightning-card>
+</template>

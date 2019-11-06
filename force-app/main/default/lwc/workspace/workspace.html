@@ -1,0 +1,15 @@
+<template>
+  <lightning-card title={name}>
+    <lightning-formatted-url class="sldx-m-left_small" value="https://online.visualstudio.com/environments"
+      tooltip="Launch your workspace" label="Launch" target="_blank" slot="actions"></lightning-formatted-url>
+    <lightning-button-icon icon-name="utility:delete" variant="destructive" alternative-text="Delete"
+      class="slds-m-left_small" slot="actions" onclick={handleDeleteWorkspace}></lightning-button-icon>
+    <div class="slds-p-horizontal_small ws-status">
+      <span class="ws-status-label">Resource Status: </span> {status}
+    </div>
+    <div class="slds-p-horizontal_small ws-status">
+      <span class="ws-status-label">Resource ID: </span>
+      {resourceId}
+    </div>
+  </lightning-card>
+</template>

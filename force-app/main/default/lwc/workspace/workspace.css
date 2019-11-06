@@ -1,0 +1,8 @@
+.ws-status {
+    font-style: italic;
+}
+
+.ws-status-label {
+    color: blue;
+    font-style: normal;
+}

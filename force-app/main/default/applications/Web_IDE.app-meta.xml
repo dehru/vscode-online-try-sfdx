@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Modern Salesforce Development in a Web Editor</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>true</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>true</isNavPersonalizationDisabled>
+    <label>Workspace Manager</label>
+    <navType>Standard</navType>
+    <tabs>Workspace_Manager</tabs>
+    <tabs>Workspace__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Web_IDE_UtilityBar</utilityBar>
+</CustomApplication>
